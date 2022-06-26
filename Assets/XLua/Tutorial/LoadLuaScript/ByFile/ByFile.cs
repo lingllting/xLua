@@ -9,6 +9,7 @@
 using UnityEngine;
 using System.Collections;
 using XLua;
+using LuaAPI = XLua.LuaDLL.Lua;
 
 namespace Tutorial
 {
@@ -19,7 +20,7 @@ namespace Tutorial
         void Start()
         {
             luaenv = new LuaEnv();
-            luaenv.DoString("require 'byfile'");
+            luaenv.DoString("require 'xLuaTest'");
         }
 
         // Update is called once per frame
